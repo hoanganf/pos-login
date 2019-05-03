@@ -37,7 +37,7 @@ class PageGetter extends Login{
 		if(isset($_GET['from'])){
 			return $_GET['from'];
 		} else {
-			return '../portal';
+			return PORTAL_DIR;
 		}
 	}
 }
