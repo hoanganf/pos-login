@@ -5,7 +5,7 @@ class UserDAO extends BaseDAO{
   }
 
   function login($userName,$password){
-    return $this->getOnceWhere('user_name=\''.$userName.'\' AND password=\''.$password.'\'',DAO::$SERVER_DATABASE_NAME);
+    return $this->getOnceWhere('user_name=\''.$userName.'\' AND password=\''.$password.'\' AND available=1');
   }
 }
 ?>
